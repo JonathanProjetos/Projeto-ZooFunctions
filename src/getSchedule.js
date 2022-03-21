@@ -40,7 +40,7 @@ const animalDay = (diaOfTheWeek) => {
 // Linha 49 = aqui foi criado uma variavel para armazena o objeto que irá receber outro objeto neste formato Tuesday: { officeHour: 'Open from 8am until 6pm', exhibition: [ 'lions', 'tigers', 'bears', 'penguins', 'elephants', 'giraffes' ]}
 // Linha 50 = aqui estou comparando o valor do parâmetro com o dia da semana que são referentes as chaves do hours se a condição for satisfatoria pegarDia traz o dia em questão.
 // Linha 51 = aqui fiz a variavel para armazenar a mensagem para todos os dias menos o Monday, as templates strings são dinâmicas conforme o dia que está sendo utilizado.
-// Linha 53 = timeAvailability aqui estou usando filter para pegar todos os animais que contem availability e usando o includes para verificar se dentro do filtro tem o dia da semana vindo como parametro da função 
+// Linha 53 = timeAvailability aqui estou usando filter para pegar todos os animais que contem availability e usando o includes para verificar se dentro do filtro tem o dia da semana vindo como parametro da função
 // 'vindo do resultado do find anterior' e tiver pegar o nome desses animais utilizando map para receber um array com os animais.
 // Linha 54 = aqui meu objeto newObject está recebendo o nome da chave sendo ele o nome vindo como parametro da função.
 // Linha 59 = Aqui foi feito a chave officeHour manualmente, e feito um ternario para se open for igual a 0 que no caso será igual a monday retorna close se não retorna a variavel msgOpen2 que será para todos menos o monday.
