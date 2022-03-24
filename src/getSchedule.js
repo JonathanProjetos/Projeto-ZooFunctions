@@ -18,7 +18,7 @@ const { hours, species } = data;
 const lista = Object.entries(hours);
 const lista1 = Object.keys(hours);
 
-const animalDay = (diaOfTheWeek) => {
+const animalDay = () => {
   const getAllAnimalHours = lista.reduce((acc, [day, { open, close }]) => {
     const menssageOpen = `Open from ${open}am until ${close}pm`;
     const menssageClose = 'The zoo will be closed!';
@@ -86,7 +86,6 @@ function getSchedule(scheduleTarget) {
     return animalDay();
   }
   if (Object.keys(hours).includes(scheduleTarget)) {
-    console.log('olá');
     return objeto1pram(scheduleTarget);
   }
   return getAnimalByname(scheduleTarget);
